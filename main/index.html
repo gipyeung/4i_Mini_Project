@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- 부트스트랩 cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- jquery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- 부트스트랩 cdn -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>My Album</title>
+    <style>
+      /*전체 폰트 적용*/
+      @import url("https://fonts.googleapis.com/css2?family=Gaegu&family=Gamja+Flower&family=Jua&display=swap");
+
+      * {
+        font-family: "Jua", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+      }
+
+      /* 조 이름, 조 소개 구역  */
+      .mytitle {
+        background-color: #f7f7f7;
+        color: black;
+
+        height: 250px;
+
+        /* 내용물을 정렬 */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      /*프로젝트 명, 프로젝트 소개 */
+
+      .project {
+        background-color: #c0d5af;
+        padding: 20px;
+      }
+
+      .project .project_top,
+      .project .project_bottom {
+        width: 800px;
+
+        background-color: #ffffff;
+
+        padding: 20px;
+        margin: 15px auto 15px auto;
+        border-radius: 10px;
+      }
+
+      /* 팀원 카드 */
+      .mycards {
+        margin: 40px auto 20px auto;
+        width: 2070px;
+      }
+
+      .mycards img {
+        width: 500px;
+        height: 500px;
+        object-fit: fill;
+      }
+
+      .card-body .card-title {
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- 조 이름, 조 소개 구역 -->
+    <div class="mytitle">
+      <h1>포아이즈 조</h1>
+      <h4>내향성 4명이 모여 함께 코딩과 협업을 배워나가는 팀입니다!</h4>
+    </div>
+    <!-- 조 이름, 조 소개 구역 끝 -->
+
+    <!-- 프로젝트 명, 프로젝트 소개 / 팀소개, 목표 -->
+    <div class="project">
+      <!-- 프로젝트 명, 프로젝트 소개 -->
+      <div class="project_top">
+        <h4>처음뵙겠습니다</h4>
+        <h5>프로젝트 소개</h5>
+      </div>
+
+      <!-- 팀소개, 목표 -->
+      <div class="project_bottom">
+        <h4>팀 소개</h4>
+        <h5>우리 팀만의 특징과 추구하는 궁극적인 목표</h5>
+      </div>
+    </div>
+    <!-- 프로젝트 명, 프로젝트 소개 끝 -->
+
+    <!-- 팀원 카드 -->
+    <div class="mycards">
+      <!--카드 div-->
+      <div class="row row-cols-1 row-cols-md-4 g-4" id="card">
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="../imgs/embarrassment.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title"><span>I</span>NFP</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="../imgs/sadness.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title"><span>I</span>NFJ</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="../imgs/anxiety.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title"><span>I</span>NTP</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="../imgs/fear.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title"><span>I</span>SFP</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--카드 div 끝-->
+    </div>
+    <!-- 팀원 카드 끝 -->
+  </body>
+</html>
