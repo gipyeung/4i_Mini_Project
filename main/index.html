@@ -57,9 +57,10 @@
         padding: 20px;
       }
 
-      .project .project_top,
-      .project .project_bottom {
-        width: 800px;
+      .project .project_1,
+      .project .project_2,
+      .project .project_3 {
+        width: 1410px;
 
         background-color: #ffffff;
 
@@ -71,12 +72,13 @@
       /* 팀원 카드 */
       .mycards {
         margin: 40px auto 20px auto;
-        width: 2070px;
+        width: 2400px;
+        height: 500px;
       }
 
       .mycards img {
-        width: 500px;
-        height: 500px;
+        width: 440px;
+        height: 440px;
         object-fit: fill;
       }
 
@@ -87,69 +89,103 @@
   </head>
 
   <body>
-    <!-- 조 이름, 조 소개 구역 -->
+    <!-- 프로젝트 명, 프로젝트 소개 -->
     <div class="mytitle">
-      <h1>포아이즈 조</h1>
-      <h4>내향성 4명이 모여 함께 코딩과 협업을 배워나가는 팀입니다!</h4>
+      <h1>처음 뵙겠습니다</h1>
+      <h4>
+        MBTI <span style="color: crimson">‘I’</span> 들이 모여 숨겨져 있는
+        자신을 소개하는 용기내기 프로젝트
+      </h4>
     </div>
-    <!-- 조 이름, 조 소개 구역 끝 -->
+    <!-- 프로젝트 명, 프로젝트 소개 구역 끝 -->
 
-    <!-- 프로젝트 명, 프로젝트 소개 / 팀소개, 목표 -->
+    <!-- 조 이름, 조 소개 / 팀 규칙 / 팀 목표-->
     <div class="project">
       <!-- 프로젝트 명, 프로젝트 소개 -->
-      <div class="project_top">
-        <h4>처음뵙겠습니다</h4>
-        <h5>프로젝트 소개</h5>
+      <div class="project_1">
+        <h4>조 이름</h4>
+        <h5>조 소개</h5>
       </div>
 
-      <!-- 팀소개, 목표 -->
-      <div class="project_bottom">
-        <h4>팀 소개</h4>
+      <!-- 팀 목표 -->
+      <div class="project_2">
+        <h4>팀 목표</h4>
         <h5>우리 팀만의 특징과 추구하는 궁극적인 목표</h5>
       </div>
+
+      <!-- 팀 약속 및 규칙 -->
+      <div class="project_3">
+        <h4>팀 약속</h4>
+        <h5>우리 팀만의 약속과 규칙</h5>
+      </div>
     </div>
-    <!-- 프로젝트 명, 프로젝트 소개 끝 -->
+
+    <!-- 조 이름, 조 소개 / 팀 규칙 / 팀 목표 끝 -->
 
     <!-- 팀원 카드 -->
     <div class="mycards">
       <!--카드 div-->
-      <div class="row row-cols-1 row-cols-md-4 g-4" id="card">
+      <div class="row row-cols-1 row-cols-sm-5 g-5" id="card">
+        <!--홍기평 -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="../imgs/anger.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">
+                <span style="color: #af2610; font-weight: 700">I</span>NFP
+              </h5>
+            </div>
+          </div>
+        </div>
+
+        <!--이봄 -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="../imgs/boaring.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">
+                <span style="color: #655dc6; font-weight: 700">I</span>NFJ
+              </h5>
+            </div>
+          </div>
+        </div>
+
+        <!--김태주-->
+        <div class="col">
+          <div class="card h-100">
+            <img src="../imgs/anxiety.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">
+                <span style="color: #d75d2a; font-weight: 700">I</span>NTP
+              </h5>
+            </div>
+          </div>
+        </div>
+
+        <!--이유진-->
         <div class="col">
           <div class="card h-100">
             <img
-              src="../imgs/embarrassment.png"
+              src="../imgs/embarassment.png"
               class="card-img-top"
               alt="..."
             />
             <div class="card-body">
-              <h5 class="card-title"><span style="color: aqua">I</span>NFP</h5>
+              <h5 class="card-title">
+                <span style="color: #d3328f; font-weight: 700">I</span>SFP
+              </h5>
             </div>
           </div>
         </div>
 
-        <div class="col">
-          <div class="card h-100">
-            <img src="../imgs/sadness.png" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title"><span>I</span>NFJ</h5>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card h-100">
-            <img src="../imgs/anxiety.png" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title"><span>I</span>NTP</h5>
-            </div>
-          </div>
-        </div>
-
+        <!--위종혁-->
         <div class="col">
           <div class="card h-100">
             <img src="../imgs/fear.png" class="card-img-top" alt="..." />
             <div class="card-body">
-              <h5 class="card-title"><span>I</span>SFP</h5>
+              <h5 class="card-title">
+                <span style="color: #7e4aa9; font-weight: 700">I</span>SFP
+              </h5>
             </div>
           </div>
         </div>
