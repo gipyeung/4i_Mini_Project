@@ -38,11 +38,6 @@
       display: flex;
       flex-direction: column;
       height: 100vh;
-      background: linear-gradient(174deg,
-          #ffffff 33.33%,
-          #9f9cd9 33.33%,
-          #9f9cd9 66.66%,
-          #ffffff 66.66%);
     }
 
     .navbar {
@@ -199,6 +194,10 @@
         let introduction = row['introduction'];
         let strengths = row['strengths'];
         let work_style = row['work_style'];
+        let color = row['color'];
+
+        const body = document.querySelector("body");
+        body.style.backgroundImage = `linear-gradient(174deg, #ffffff 33.33%, ${color} 33.33%, ${color} 66.66%, #ffffff 66.66%)`;
 
         let temp_html = `
         <p>이름 : ${name}</p>
