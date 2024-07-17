@@ -1,129 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- 부트스트랩 cdn -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- jquery cdn -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- 블로그 아이콘 -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css%22">
 
-    <!-- 부트스트랩 cdn -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
+  <!-- 부트스트랩 cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 
-    <title>김태주</title>
-    <style>
-      /*전체 폰트 적용*/
-      @import url("https://fonts.googleapis.com/css2?family=Gaegu&family=Gamja+Flower&family=Jua&display=swap");
+  <!-- jquery cdn -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-      * {
-        font-family: "Jua", sans-serif;
-        font-weight: 300;
-        font-style: normal;
-        margin: 0;
+  <!-- 부트스트랩 cdn -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 
-        padding: 0;
+  <title>개인페이지</title>
+  <style>
+    /*전체 폰트 적용*/
+    @import url("https://fonts.googleapis.com/css2?family=Gaegu&family=Gamja+Flower&family=Jua&display=swap");
+
+    * {
+      font-family: "Jua", sans-serif;
+      font-weight: 300;
+      font-style: normal;
+      margin: 0;
+      padding: 0;
+    }
+
+    html,
+    body {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      background: linear-gradient(174deg,
+          #ffffff 33.33%,
+          #9f9cd9 33.33%,
+          #9f9cd9 66.66%,
+          #ffffff 66.66%);
+    }
+
+    .navbar {
+      background-color: #fff;
+      border: 1px solid black;
+      padding: 30px;
+      display: flex;
+      justify-content: center;
+      flex: 0 0 auto;
+    }
+
+    .navbar a {
+      color: #000;
+      margin: 0 30px;
+      text-decoration: none;
+    }
+
+    .navbar a#home {
+      position: absolute;
+      left: 30px;
+      font-size: 2rem;
+    }
+
+    .navbar a:hover {
+      color: #c0d5af;
+      cursor: pointer;
+    }
+
+    .container {
+      display: flex;
+      margin: 30px auto;
+      flex: 1;
+      padding: 20px;
+      box-sizing: border-box;
+      height: calc(100vh-80px);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .sidebar,
+    .content .box {
+      height: 1000px;
+      /* Adjust this value to control the height of both boxes */
+    }
+
+    .sidebar {
+      border: 2px solid black;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+      width: 350px;
+    }
+
+    .sidebar img {
+      width: 100%;
+      height: 440px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .sidebar .info {
+      text-align: left;
+      font-size: 1.2rem;
+      /* Increase the font size */
+      line-height: 2;
+    }
+
+    .sidebar .info p {
+      margin: 25px 0;
+    }
+
+    .sidebar .info a {
+      color: #000;
+      text-decoration: none;
+    }
+
+    .sidebar .info a:hover {
+      color: #9f9cd9;
+      text-decoration: none;
+    }
+
+    .content {
+      flex: 1;
+      padding: 0 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding-left: 50px;
+    }
+
+    .content .box {
+      display: flex;
+      flex-direction: column;
+      /* border: 2px solid black;
+        background-color: #e0e0d2; */
+      border-radius: 12px;
+      padding: 30px;
+      gap: 150px;
+    }
+
+    .content .box .inner-box {
+      display: flex;
+      flex-direction: column;
+      border: 2px solid black;
+      background-color: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      height: 300px;
+      align-items: flex-start;
+      justify-content: left;
+    }
+  </style>
+
+  <script type="module">
+    // Firebase SDK 라이브러리 가져오기
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
+    import { getFirestore } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
+    import { collection, addDoc } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
+    import { getDocs } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
+
+
+    // Firebase 구성 정보 설정
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyA5x8LSoj0PGFp-3JkjBBH4ShFUTIkVtM4",
+      authDomain: "sparta-e7e4b.firebaseapp.com",
+      projectId: "sparta-e7e4b",
+      storageBucket: "sparta-e7e4b.appspot.com",
+      messagingSenderId: "731740397266",
+      appId: "1:731740397266:web:8cb592d50239cbf660570b",
+      measurementId: "G-LBF4LCFM5Y"
+    };
+
+
+    // Firebase 인스턴스 초기화
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+
+    const receivedData = location.href.split('?')[1];
+
+    let docs = await getDocs(collection(db, "members"));
+    docs.forEach((doc) => {
+
+      let row = doc.data();
+
+      if (row['id'] === receivedData) {
+
+        let image = row['image'];
+        let name = row['name'];
+        let mbti = row['mbti'];
+        let hobby = row['hobby'];
+        let blog = row['blog'];
+        let introduction = row['introduction'];
+        let strengths = row['strengths'];
+        let work_style = row['work_style'];
+
+        let temp_html = `
+        <p>이름 : ${name}</p>
+        <p>MBTI : ${mbti}</p>
+        <p>취미 : ${hobby}</p>
+        <p><a href=" ${blog}">블로그 🔗</a></p>
+      `;
+
+        $('#profilecard').append(temp_html);
+
+        temp_html = `
+        <div class="inner-box">
+          <h5 style="padding-bottom: 11px">자기소개</h5>
+          ${introduction}
+        </div>
+        <div class="inner-box">
+          <h5 style="padding-bottom: 11px">객관적으로 살펴본 자신의 장점</h5>
+          ${strengths}
+        </div>
+        <div class="inner-box">
+          <h5 style="padding-bottom: 11px">자신의 협업 스타일</h5>
+          ${work_style}
+        </div>
+        `;
+
+        $('#info_box').append(temp_html);
       }
 
-      html,
-      body {
-        display: flex;
-        flex-direction: column;
+    });
 
-        height: 100vh;
-      }
+  </script>
+</head>
 
-      .navbar {
-        background-color: #fff;
-        border: 1px solid black;
-        padding: 30px;
-        display: flex;
-        justify-content: center;
-        flex: 0 0 auto;
-      }
+<body>
+  <div class="navbar">
+    <a href="./index.html" id="home">🏚️</a>
+    <a href="./info.html?gipyueng">홍기평</a>
+    <a href="./info.html?bom">이봄</a>
+    <a href="./info.html?taeju">김태주</a>
+    <a href="./info.html?yujin">이유진</a>
+    <a href="./info.html?jonghyeok">위종혁</a>
+  </div>
+  <!-- Main container -->
+  <div class="container">
+    <!-- Sidebar with image and info -->
+    <div class="sidebar">
+      <img src="https://via.placeholder.com/300x400.png?text=Placeholder+Image" alt="Placeholder Image" />
+      <div class="info" id="profilecard">
 
-      .navbar a {
-        color: #000;
-        margin: 0 30px;
-        text-decoration: none;
-      }
-
-      .container {
-        display: flex;
-        margin: 120px auto 120px auto;
-        flex: 1;
-        padding: 20px;
-        box-sizing: border-box;
-      }
-
-      .sidebar {
-        border: 2px solid black;
-        background-color: #fff;
-        padding: 20px;
-        border-radius: 8px;
-        text-align: center;
-      }
-
-      .sidebar img {
-        width: 100%;
-        height: 500px;
-        border-radius: 8px;
-        margin-bottom: 20px;
-      }
-
-      .content {
-        flex: 1;
-        padding: 0 40px;
-        display: flex;
-        flex-direction: column;
-        gap: 200px;
-      }
-
-      .content .box {
-        display: flex;
-        flex: 1;
-        border: 2px solid black;
-        background-color: #e0e0d2;
-        border-radius: 12px;
-        padding: 30px;
-        align-items: center;
-        justify-content: left;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="navbar">
-      <a href="#">자신에 대한 설명 및 MBTI</a>
-      <a href="#">객관적으로 살펴본 자신의 장점</a>
-      <a href="#">자신의 협업 스타일 소개</a>
-      <a href="#">팀원들의 블로그 주소</a>
-    </div>
-    <!-- Main container -->
-    <div class="container">
-      <!-- Sidebar with image -->
-      <div class="sidebar">
-        <img
-          src="https://via.placeholder.com/300x400.png?text=Placeholder+Image"
-          alt="Placeholder Image"
-        />
       </div>
-      <!-- Content sections -->
-      <div class="content">
-        <div class="box">자신의 장점</div>
-        <div class="box">남들이 생각하는 나의 장점</div>
-        <div class="box">단점</div>
+    </div>
+    <!-- Content sections -->
+    <div class="content">
+      <div class="box" id="info_box">
+
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
