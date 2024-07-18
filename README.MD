@@ -38,6 +38,7 @@
     - HTML
     - JavaScript
     - CSS
+    - firebase
 
 - 와이어프레임
     - 메인 페이지
