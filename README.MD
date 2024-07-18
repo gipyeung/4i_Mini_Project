@@ -1,6 +1,13 @@
 # 파이브아이즈 (24조)
 
-[우리 팀원](https://www.notion.so/c95c2c1abeda4b4d990ccbd244ac8dcc?pvs=21)
+## 우리 팀원
+| 이름 | 역할 | MBTI | 블로그 | 한마디 | TMI |
+    | --- | --- | --- | --- | --- | --- |
+    | 홍기평 | 팀장 | INFP | [🔗](https://github.com/gipyeung?tab=repositories) | 앞으로 열심히 하겠습니다 | 운동 좋아합니다 |
+    | 이봄 | 팀원 | INFJ | [🔗](https://everyday-spring.com/) | 반갑습니다 | 제주도 입니다 |
+    | 김태주 | 팀원 | INTP | [🔗](https://everyday-spring.com/) | 반가워요 앞으로 화이팅입니다 | 고양이 집사입니다 |
+    | 이유진 | 팀원 | ISFP | [🔗](https://velog.io/@lee9040s/posts) | 같이 열심히 해보아요~! | 커피에 진심입니다 |
+    | 위종혁 | 팀원 | INFJ | [🔗](https://jonghyeok-1.tistory.com/) | 잘부탁드립니다. | 운동 좋아합니다 |
 
 - 팀
     - 팀명 : 파이브아이즈
@@ -15,8 +22,7 @@
     [개발 일정 (스프레드시트)](https://docs.google.com/spreadsheets/d/1uizkycFczUMB-Do1Bqs513TMB4bMPd_PTSxRwhujUjw/edit?usp=sharing)
     
 - 역할 분담
-    
-    
+
     | 이름 | 와이어 프레임 | HTML/CSS | JavaScript |
     | --- | --- | --- | --- |
     | 홍기평 | 개인 페이지 틀 구성 | 개인 페이지 HTML | 1차  |
@@ -24,10 +30,12 @@
     | 김태주 | 메인 페이지 틀 구성 | 메인 페이지 HTML |  |
     | 이유진 | 메인 페이지 상세 구현 | 메인 페이지 CSS |  |
     | 위종혁 | 개인페이지 및 메인페이지 보조 | HTML / CSS 보조 |  |
+
 - 사용하는 기술
     - HTML
     - JavaScript
     - CSS
+
 - 와이어프레임
     - 메인 페이지
     
