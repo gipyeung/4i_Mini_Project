@@ -41,11 +41,11 @@
 - 와이어프레임
     - 메인 페이지
     
-    ![메인페이지](./imgs/Wireframe1.png)
+    ![메인페이지](./imgs/Wireframe2.png)
     
     - 개인 페이지
     
-    ![메인페이지](./imgs/Wireframe2.png)
+    ![메인페이지](./imgs/Wireframe1.png)
     
 ### 우리 팀 규칙
 
