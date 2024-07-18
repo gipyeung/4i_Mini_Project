@@ -1,7 +1,7 @@
 # 파이브아이즈 (24조)
 
 ## 우리 팀원
-| 이름 | 역할 | MBTI | 블로그 | 한마디 | TMI |
+    | 이름 | 역할 | MBTI | 블로그 | 한마디 | TMI |
     | --- | --- | --- | --- | --- | --- |
     | 홍기평 | 팀장 | INFP | [🔗](https://github.com/gipyeung?tab=repositories) | 앞으로 열심히 하겠습니다 | 운동 좋아합니다 |
     | 이봄 | 팀원 | INFJ | [🔗](https://everyday-spring.com/) | 반갑습니다 | 제주도 입니다 |
