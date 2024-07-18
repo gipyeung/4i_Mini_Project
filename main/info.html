@@ -156,9 +156,7 @@
     // Firebase SDK 라이브러리 가져오기
     import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
     import { getFirestore } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
-    import { collection, addDoc } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
-    import { query, where } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
-    import { getDocs } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
+    import { doc, getDoc } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
 
 
     // Firebase 구성 정보 설정
@@ -180,31 +178,24 @@
 
     const receivedData = location.href.split('?')[1];
 
-    let row;
-    async function fetchData() {
-      const docQuery = query(collection(db, "members"), where("id", "==", receivedData));
-      const querySnapshot = await getDocs(docQuery);
+    const docRef = doc(db, "members", receivedData);
+    const docSnap = await getDoc(docRef);
 
-      querySnapshot.forEach((doc) => {
-        console.log(doc.id, " => ", doc.data());
-        row = doc.data();
-      });
+    let row = docSnap.data();
 
+    let name = row.name;
+    let mbti = row.mbti;
+    let hobby = row.hobby;
+    let blog = row.blog;
+    let introduction = row.introduction;
+    let strengths = row.strengths;
+    let work_style = row.work_style;
+    let color = row.color;
 
-      let image = row.image;
-      let name = row.name;
-      let mbti = row.mbti;
-      let hobby = row.hobby;
-      let blog = row.blog;
-      let introduction = row.introduction;
-      let strengths = row.strengths;
-      let work_style = row.work_style;
-      let color = row.color;
+    const body = document.querySelector("body");
+    body.style.backgroundImage = `linear-gradient(174deg, #ffffff 33.33%, ${color} 33.33%, ${color} 66.66%, #ffffff 66.66%)`;
 
-      const body = document.querySelector("body");
-      body.style.backgroundImage = `linear-gradient(174deg, #ffffff 33.33%, ${color} 33.33%, ${color} 66.66%, #ffffff 66.66%)`;
-
-      let temp_html = `
+    let temp_html = `
         <img src="../imgs/${receivedData}.jpg" alt="Placeholder Image" />
         <div class="info">
           <p>이름 : ${name}</p>
@@ -214,9 +205,9 @@
         </div>
       `;
 
-      $('#profilecard').append(temp_html);
+    $('#profilecard').append(temp_html);
 
-      temp_html = `
+    temp_html = `
         <div class="inner-box">
           <h5 style="padding-bottom: 11px">⭐자기소개⭐</h5>
           ${introduction}
@@ -231,8 +222,8 @@
         </div>
         `;
 
-      $('#info_box').append(temp_html);
-    }
+    $('#info_box').append(temp_html);
+
 
     fetchData();
 
