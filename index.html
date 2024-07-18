@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- 부트스트랩 cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- jquery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- 부트스트랩 cdn -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>파이브아이즈</title>
+    <style>
+      /*전체 폰트 적용*/
+      @import url("https://fonts.googleapis.com/css2?family=Gaegu&family=Gamja+Flower&family=Jua&display=swap");
+
+      * {
+        font-family: "Jua", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+      }
+
+      /* 조 이름, 조 소개 구역  */
+      .mytitle {
+        background-color: #f7f7f7;
+        color: black;
+
+        height: 250px;
+
+        /* 내용물을 정렬 */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      /*프로젝트 명, 프로젝트 소개 */
+
+      .project {
+        background-color: #c0d5af;
+        padding: 20px;
+      }
+
+      .project .project_1,
+      .project .project_2,
+      .project .project_3 {
+        width: 800px;
+
+        background-color: #ffffff;
+
+        padding: 20px;
+        margin: 15px auto 15px auto;
+        border-radius: 10px;
+      }
+
+      /* 팀원 카드 */
+      .mycards {
+        margin: 40px auto 40px auto;
+        /* width: 2400px; */
+        width: 2000px;
+        height: 500px;
+      }
+
+      .mycards img {
+        /* width: 440px;
+        height: 440px; */
+        width: 360px;
+        height: 360px;
+        object-fit: fill;
+      }
+
+      .mycards .col {
+        transition: transform 0.3s ease;
+      }
+
+      .mycards .col a {
+        text-decoration: none;
+        color: #000;
+      }
+
+      .mycards .col:hover {
+        transform: translateY(-15px);
+      }
+
+      .card-body .card-title {
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- 프로젝트 명, 프로젝트 소개 -->
+    <div class="mytitle">
+      <h1>처음 뵙겠습니다</h1>
+      <h4>
+        MBTI <span style="color: crimson">‘I’</span> 들이 모여 숨겨져 있는
+        자신을 소개하는 용기내기 프로젝트
+      </h4>
+    </div>
+    <!-- 프로젝트 명, 프로젝트 소개 구역 끝 -->
+
+    <!-- 조 이름, 조 소개 / 팀 규칙 / 팀 목표-->
+    <div class="project">
+      <!-- 프로젝트 명, 프로젝트 소개 -->
+      <div class="project_1">
+        <h4>파이브아이즈</h4>
+        <h5>내향성 5명이 모여 함께 코딩과 협업을 배워나가는 팀입니다!</h5>
+      </div>
+
+      <!-- 팀 목표 -->
+      <div class="project_2">
+        <h4>팀 목표</h4>
+        <h5>저희 포아이즈팀은 개인의 성장과 팀의 성장을 동시에 추구합니다!!</h5>
+        <h5>
+          긍정적인 언어와 태도로 함께 지속적으로 학습하고 개선하며, 새로운
+          지식을 팀 프로젝트에 적용합니다.
+        </h5>
+        <h5>
+          이를 통해 팀 전체의 역량을 향상시키고 더 나은 결과물을 만들기위해
+          노력하여 개인과 팀이 함께 성공할 수 있는 목표를 가집니다.
+        </h5>
+      </div>
+
+      <!-- 팀 약속 및 규칙 -->
+      <div class="project_3">
+        <h4>팀 약속 & 규칙</h4>
+        <h5>자주 소통하고 적극적으로 의견을 냅니다</h5>
+        <h5>팀원 각자의 장점을 파악하고 적극적으로 도움을 요청합니다</h5>
+        <h5>어려운 문제는 다같이 의견을 나누어 가며 해결합니다</h5>
+        <h5>서로에게 동기부여가 될 수 있도록 긍정적인 언어를 사용합니다</h5>
+      </div>
+    </div>
+
+    <!-- 조 이름, 조 소개 / 팀 규칙 / 팀 목표 끝 -->
+
+    <!-- 팀원 카드 -->
+    <div class="mycards">
+      <!--카드 div-->
+      <div class="row row-cols-1 row-cols-sm-5 g-5" id="card">
+        <!--홍기평 -->
+        <div class="col">
+          <a href="./info.html?gipyueng">
+            <div class="card h-100">
+              <img src="./imgs/joy.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">
+                  <span style="color: #af2610; font-weight: 700">I</span>NFP
+                </h5>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!--이봄 -->
+        <div class="col">
+          <a href="./info.html?bom">
+            <div class="card h-100">
+              <img src="./imgs/ennui.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">
+                  <span style="color: #655dc6; font-weight: 700">I</span>NFJ
+                </h5>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!--김태주-->
+        <div class="col">
+          <a href="./info.html?taeju">
+            <div class="card h-100">
+              <img src="./imgs/anxiety.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">
+                  <span style="color: #d75d2a; font-weight: 700">I</span>NTP
+                </h5>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!--이유진-->
+        <div class="col">
+          <a href="./info.html?yujin">
+            <div class="card h-100">
+              <img
+                src="./imgs/embarrassment.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  <span style="color: #d3328f; font-weight: 700">I</span>SFP
+                </h5>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!--위종혁-->
+        <div class="col">
+          <a href="./info.html?jonghyeok">
+            <div class="card h-100">
+              <img src="./imgs/sadness.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">
+                  <span style="color: #a6c0de; font-weight: 700">I</span>NFJ
+                </h5>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!--카드 div 끝-->
+    </div>
+    <!-- 팀원 카드 끝 -->
+  </body>
+</html>
