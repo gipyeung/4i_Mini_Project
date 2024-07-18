@@ -1,4 +1,4 @@
-# [파이브아이즈 (24조)](https://gipyeung.github.io/4i_Mini_Project/index.html)
+# [파이브아이즈 (24조)](https://gipyeung.github.io/4i_Mini_Project/index.html) 👈구현 페이지 바로가기
 
 - 팀원 소개 
 
